@@ -1,0 +1,32 @@
+**********************************************************************************************************
+Trabajo Encargado Nº 3: HTML + CSS + MySQL
+
+- Crear una base de datos en MySQL de nombre DEPARTAMENTO que tenga dos tablas: DOCENTES y CURSOS. La tabla Docentes tendrá información básica del docente (Apellidos y nombres, título profesional, fecha de nacimiento). La tabla Cursos tendrá información como la clave del curso, nombre de la asignatura, nivel en el que se dicta. Un docente puede dictar uno o más cursos, y un curso puede ser dictado por uno o más docentes.
+
+- Cree una página web para mostrar la información del Departamento Académico, esto es, un listado de docentes y los cursos que dicta, y otro listado de los cursos del departamento y los docentes que dictan dicho curso.
+
+- Utilizando hojas de estilo en cascada (CSS), cree varias páginas web para mostrar información de varios departamentos, cuyos datos estarán contenidos en una base de datos MySQL de nombre FACULTAD, con tres tablas: DEPARTAMENTO, DOCENTES y CURSOS. Un docente pertenece solo a un departamento al igual que los cursos, pero un docente puede dictar varios cursos y un curso puede ser dictado por varios docentes.
+
+--Fecha de Presentación: Miércoles 23 de octubre del 2019 en horario de clase--
+
+El trabajo puede ser presentado por grupos de hasta dos estudiantes.
+**********************************************************************************************************
+
+git init --> crear repositorio vacio local
+
+git add . --> para guardar los archivos modificados al repositorio local
+git commit -m 'mensaje' --> para agregar un mnesaje sobre lo que estas haciendo al subir los archivos
+git remote add origin https://github.com/Aldo12330/Tecnologia-Web-SiAc.git
+git push -u origin master --> subir todos los archivos al repositorio
+
+PERSONA = (DNI, Apellido, Nombre, Fecha_Nacimiento, Estado_Civil, Genero)
+ALUMNO = (DNI, Legajo, Año_Ingreso)
+PROFESOR = (DNI, Matricula, Nro_Expediente)
+TITULO = (Cod_Titulo, Nombre, Descripción)
+TITULO-PROFESOR = (Cod_Titulo, DNI, Fecha)
+CURSO = (Cod_Curso, Nombre, Descripción, Fecha_Creacion, Duracion)
+ALUMNO-CURSO = (DNI, Cod_Curso, Año, Desempeño, Calificación)
+PROFESOR-CURSO = (DNI, Cod_Curso, Fecha_Desde, Fecha_Hasta)
+
+Tecnologia-Web-SiAc
+Sistema Academico HTML5 + CSS3 + MYSQL, Tecnologia Web -UNP
